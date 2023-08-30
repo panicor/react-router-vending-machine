@@ -1,25 +1,27 @@
-// import NavBar from "./NavBar";
+import NavBar from "./NavBar";
 import VendingMachine from "./VendingMachine";
 import "./App.css";
-import Snack from "./Snack";
+import Twizzlers from "./Twizzlers";
+import Crackers from "./Crackers";
+import Soda from "./Soda";
 import { BrowserRouter, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      {/* <NavBar /> */}
+       <NavBar />
         <Route exact path="/">
           <VendingMachine />
         </Route>
         <Route exact path="/twizzlers">
-          <Snack name="twizzlers" />
+          <Twizzlers />
         </Route>
         <Route exact path="/crackers">
-          <Snack name="crackers" />
+          <Crackers />
         </Route>
         <Route exact path="/soda">
-          <Snack name="soda" />
+          <Soda />
         </Route>
       </BrowserRouter>
     </div>
